@@ -37,23 +37,6 @@ function IconApple() {
   );
 }
 
-// ── Screenshot placeholder ────────────────────────────────────────────────────
-
-function ScreenshotPlaceholder({ label, filename }: { label: string; filename: string }) {
-  return (
-    <div className="relative aspect-[9/19.5] bg-gray-100 rounded-[2rem] overflow-hidden border border-gray-200 shadow-xl">
-      <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 text-text-tertiary text-sm text-center px-4">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <rect x="3" y="3" width="18" height="18" rx="2" /><circle cx="8.5" cy="8.5" r="1.5" />
-          <polyline points="21 15 16 10 5 21" />
-        </svg>
-        <span className="font-medium text-gray-400">{label}</span>
-        <span className="text-xs text-gray-300">{filename}</span>
-      </div>
-    </div>
-  );
-}
-
 // ── Score Ring SVG ─────────────────────────────────────────────────────────────
 
 function ScoreRing({ score = 44 }: { score?: number }) {
@@ -390,12 +373,19 @@ export default function Home() {
               { label: "Share your progress", filename: "share-card.png" },
             ].map((s) => (
               <div key={s.filename} className="flex flex-col gap-3">
-                <ScreenshotPlaceholder label={s.label} filename={`/screenshots/${s.filename}`} />
+                <div className="relative aspect-[9/19.5] rounded-[2rem] overflow-hidden border border-gray-200 shadow-xl">
+                  <Image
+                    src={`/screenshots/${s.filename}`}
+                    alt={s.label}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                  />
+                </div>
                 <p className="text-sm text-center text-text-secondary">{s.label}</p>
               </div>
             ))}
           </div>
-          <p className="text-center text-xs text-text-tertiary mt-8">Drop your screenshots into <code className="bg-gray-200 px-1.5 py-0.5 rounded text-xs">public/screenshots/</code></p>
         </div>
       </section>
 
