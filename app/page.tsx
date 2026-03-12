@@ -2,6 +2,7 @@
 
 import { useState, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 // ── Icons ─────────────────────────────────────────────────────────────────────
 
@@ -49,7 +50,7 @@ function ScoreRing({ score = 44 }: { score?: number }) {
         <circle cx="64" cy="64" r={r} fill="none" stroke="#F5F7FA" strokeWidth="10" />
         <circle
           cx="64" cy="64" r={r} fill="none"
-          stroke="#3B6EF5" strokeWidth="10"
+          stroke="#E6A23C" strokeWidth="10"
           strokeDasharray={`${fill} ${circ}`}
           strokeLinecap="round"
         />
@@ -455,7 +456,7 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-6 text-sm text-text-secondary">
             <a href="mailto:ray@lipidlog.com" className="hover:text-brand-blue transition">Contact</a>
-            <span className="text-text-tertiary">Privacy Policy (coming soon)</span>
+            <Link href="/privacy" className="hover:text-brand-blue transition">Privacy Policy</Link>
             <span className="text-text-tertiary">© 2025 LipidLog</span>
           </div>
         </div>
