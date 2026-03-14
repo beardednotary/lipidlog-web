@@ -9,6 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  icons: { icon: "/icon.png", apple: "/icon.png" },
   title: "LipidLog — Improve your cholesterol before your next blood test",
   description:
     "LipidLog helps you track your cholesterol score, identify what's driving your numbers, and improve your labs before your next test.",

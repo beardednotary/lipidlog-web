@@ -79,7 +79,7 @@ function BetaForm() {
     );
   }
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.SyntheticEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus("submitting");
 
@@ -220,7 +220,7 @@ export default function Home() {
       {/* ── Nav ─────────────────────────────────────────────────────────── */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
         <div className="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
-          <span className="font-bold text-lg tracking-tight text-text-primary">LipidLog</span>
+          <Image src="/logo.png" alt="LipidLog" height={28} width={120} className="object-contain" />
           <a
             href="#beta"
             className="px-4 py-2 rounded-lg bg-brand-blue text-white text-sm font-semibold hover:bg-blue-600 transition"
