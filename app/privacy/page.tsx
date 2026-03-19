@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import SiteNav from "@/app/components/SiteNav";
+import SiteFooter from "@/app/components/SiteFooter";
 
 export const metadata: Metadata = {
   title: "Privacy Policy — LipidLog",
@@ -9,17 +10,7 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   return (
     <main className="min-h-screen bg-white">
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
-        <div className="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
-          <Link href="/" className="font-bold text-lg tracking-tight text-text-primary">LipidLog</Link>
-          <Link
-            href="/#beta"
-            className="px-4 py-2 rounded-lg bg-brand-blue text-white text-sm font-semibold hover:bg-blue-600 transition"
-          >
-            Join Beta
-          </Link>
-        </div>
-      </nav>
+      <SiteNav />
 
       <div className="max-w-2xl mx-auto px-6 pt-32 pb-24">
         <h1 className="text-3xl lg:text-4xl font-bold text-text-primary mb-2">Privacy Policy (Beta)</h1>
@@ -62,7 +53,7 @@ export default function PrivacyPage() {
               <p className="text-text-secondary leading-relaxed mt-3">
                 This information helps improve the app and identify bugs.
               </p>
-              <p className="text-text-secondary leading-relaxed mt-3 font-medium text-text-primary">
+              <p className="font-medium text-text-primary mt-3">
                 No health data is shared with advertisers.
               </p>
             </div>
@@ -95,19 +86,7 @@ export default function PrivacyPage() {
         </section>
       </div>
 
-      <footer className="py-10 px-6 bg-brand-gray border-t border-gray-200">
-        <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div>
-            <p className="font-bold text-text-primary">LipidLog</p>
-            <p className="text-sm text-text-tertiary">Improve your cholesterol before your next test.</p>
-          </div>
-          <div className="flex items-center gap-6 text-sm text-text-secondary">
-            <a href="mailto:ray@lipidlog.com" className="hover:text-brand-blue transition">Contact</a>
-            <Link href="/privacy" className="hover:text-brand-blue transition">Privacy Policy</Link>
-            <span className="text-text-tertiary">© 2025 LipidLog</span>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }
