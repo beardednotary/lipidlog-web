@@ -8,12 +8,20 @@ export default function SiteNav() {
         <Link href="/">
           <Image src="/logo.png" alt="LipidLog" height={28} width={120} className="object-contain" />
         </Link>
-        <Link
-          href="/#beta"
-          className="px-4 py-2 rounded-lg bg-brand-blue text-white text-sm font-semibold hover:bg-blue-600 transition"
-        >
-          Join Beta
-        </Link>
+        <div className="flex items-center gap-4">
+          <Link
+            href="/tools/cholesterol-calculator"
+            className="text-sm font-medium text-text-secondary hover:text-brand-blue transition"
+          >
+            Calculator
+          </Link>
+          <Link
+            href="/#beta"
+            className="px-4 py-2 rounded-lg bg-brand-blue text-white text-sm font-semibold hover:bg-blue-600 transition"
+          >
+            Join Beta
+          </Link>
+        </div>
       </div>
     </nav>
   );
