@@ -221,12 +221,15 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
         <div className="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
           <Image src="/logo.png" alt="LipidLog" height={28} width={120} className="object-contain" />
-          <div className="flex items-center gap-4">
-            <Link
-              href="/tools/cholesterol-calculator"
-              className="text-sm font-medium text-text-secondary hover:text-brand-blue transition"
-            >
+          <div className="flex items-center gap-5">
+            <Link href="/cholesterol" className="text-sm font-medium text-text-secondary hover:text-brand-blue transition">
+              Cholesterol
+            </Link>
+            <Link href="/tools/cholesterol-calculator" className="text-sm font-medium text-text-secondary hover:text-brand-blue transition">
               Calculator
+            </Link>
+            <Link href="/about" className="text-sm font-medium text-text-secondary hover:text-brand-blue transition">
+              About
             </Link>
             <a
               href="#beta"

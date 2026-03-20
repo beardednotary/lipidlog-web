@@ -8,12 +8,15 @@ export default function SiteNav() {
         <Link href="/">
           <Image src="/logo.png" alt="LipidLog" height={28} width={120} className="object-contain" />
         </Link>
-        <div className="flex items-center gap-4">
-          <Link
-            href="/tools/cholesterol-calculator"
-            className="text-sm font-medium text-text-secondary hover:text-brand-blue transition"
-          >
+        <div className="flex items-center gap-5">
+          <Link href="/cholesterol" className="text-sm font-medium text-text-secondary hover:text-brand-blue transition">
+            Cholesterol
+          </Link>
+          <Link href="/tools/cholesterol-calculator" className="text-sm font-medium text-text-secondary hover:text-brand-blue transition">
             Calculator
+          </Link>
+          <Link href="/about" className="text-sm font-medium text-text-secondary hover:text-brand-blue transition">
+            About
           </Link>
           <Link
             href="/#beta"
