@@ -3,6 +3,7 @@
 import { useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import SiteNav from "@/app/components/SiteNav";
 
 // ── Icons ─────────────────────────────────────────────────────────────────────
 
@@ -217,29 +218,7 @@ function BetaForm() {
 export default function Home() {
   return (
     <main>
-      {/* ── Nav ─────────────────────────────────────────────────────────── */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
-        <div className="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
-          <Image src="/logo.png" alt="LipidLog" height={28} width={120} className="object-contain" />
-          <div className="flex items-center gap-5">
-            <Link href="/cholesterol" className="text-sm font-medium text-text-secondary hover:text-brand-blue transition">
-              Cholesterol
-            </Link>
-            <Link href="/tools/cholesterol-calculator" className="text-sm font-medium text-text-secondary hover:text-brand-blue transition">
-              Calculator
-            </Link>
-            <Link href="/about" className="text-sm font-medium text-text-secondary hover:text-brand-blue transition">
-              About
-            </Link>
-            <a
-              href="#beta"
-              className="px-4 py-2 rounded-lg bg-brand-blue text-white text-sm font-semibold hover:bg-blue-600 transition"
-            >
-              Join Beta
-            </a>
-          </div>
-        </div>
-      </nav>
+      <SiteNav />
 
       {/* ── Hero ────────────────────────────────────────────────────────── */}
       <section className="pt-32 pb-24 px-6 bg-white">
