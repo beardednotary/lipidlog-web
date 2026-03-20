@@ -11,11 +11,42 @@ const TG_VALUES = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const guidePages: MetadataRoute.Sitemap = [
+    {
+      url: `${BASE_URL}/guides/how-long-to-lower-cholesterol`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+      lastModified: new Date("2026-03-19"),
+    },
+    {
+      url: `${BASE_URL}/guides/how-much-can-cholesterol-drop-in-90-days`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+      lastModified: new Date("2026-03-19"),
+    },
+    {
+      url: `${BASE_URL}/guides/can-you-lower-cholesterol-without-medication`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+      lastModified: new Date("2026-03-19"),
+    },
+  ];
+
   const staticPages: MetadataRoute.Sitemap = [
     {
       url: BASE_URL,
       changeFrequency: "monthly",
       priority: 1.0,
+    },
+    {
+      url: `${BASE_URL}/cholesterol`,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/about`,
+      changeFrequency: "monthly",
+      priority: 0.7,
     },
     {
       url: `${BASE_URL}/tools/cholesterol-calculator`,
@@ -42,5 +73,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
 
-  return [...staticPages, ...labPages];
+  return [...staticPages, ...guidePages, ...labPages];
 }
