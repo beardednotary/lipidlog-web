@@ -10,7 +10,7 @@ export default function SiteFooter() {
           <p className="text-sm text-text-tertiary">Improve your cholesterol before your next test.</p>
         </div>
         <div className="flex items-center gap-6 text-sm text-text-secondary">
-          <a href="mailto:ray@lipidlog.com" className="hover:text-brand-blue transition">Contact</a>
+          <a href="mailto:ray@dahvio.com" className="hover:text-brand-blue transition">Contact</a>
           <Link href="/privacy" className="hover:text-brand-blue transition">Privacy Policy</Link>
           <a href="https://dahvio.com" className="text-text-tertiary hover:text-brand-blue transition">© 2026 DahVio Studios</a>
         </div>
