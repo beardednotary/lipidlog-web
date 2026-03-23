@@ -20,12 +20,14 @@ export const metadata: Metadata = {
     url: "https://lipidlog.com",
     siteName: "LipidLog",
     type: "website",
+    images: [{ url: "https://lipidlog.com/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "LipidLog — Improve your cholesterol before your next blood test",
     description:
       "Track your cholesterol score and improve your labs before your next test.",
+    images: ["https://lipidlog.com/og-image.png"],
   },
 };
 
