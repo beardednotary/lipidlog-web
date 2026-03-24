@@ -48,6 +48,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
       lastModified: new Date("2026-03-23"),
     },
+    {
+      url: `${BASE_URL}/guides/how-quickly-does-exercise-lower-ldl`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+      lastModified: new Date("2026-03-23"),
+    },
+    {
+      url: `${BASE_URL}/guides/does-weight-loss-reduce-cholesterol`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+      lastModified: new Date("2026-03-23"),
+    },
+    {
+      url: `${BASE_URL}/guides/foods-that-reduce-ldl-fastest`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+      lastModified: new Date("2026-03-23"),
+    },
   ];
 
   const staticPages: MetadataRoute.Sitemap = [

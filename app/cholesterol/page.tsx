@@ -60,6 +60,21 @@ const GUIDES = [
     title: "What Affects Cholesterol the Most?",
     description: "The major drivers of LDL, HDL, and triglycerides ranked by impact — and what to focus on first.",
   },
+  {
+    href: "/guides/how-quickly-does-exercise-lower-ldl",
+    title: "How Quickly Does Exercise Lower LDL?",
+    description: "The timeline and magnitude of exercise's effect on LDL, HDL, and triglycerides — and what kind works best.",
+  },
+  {
+    href: "/guides/does-weight-loss-reduce-cholesterol",
+    title: "Does Weight Loss Reduce Cholesterol?",
+    description: "Which cholesterol markers respond most to weight loss, by how much, and over what timeframe.",
+  },
+  {
+    href: "/guides/foods-that-reduce-ldl-fastest",
+    title: "Foods That Reduce LDL Cholesterol Fastest",
+    description: "The foods with the strongest evidence for LDL reduction — how they work and what to expect.",
+  },
 ];
 
 export default function CholesterolHub() {
