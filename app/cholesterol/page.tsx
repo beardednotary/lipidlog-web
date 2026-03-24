@@ -45,6 +45,21 @@ const GUIDES = [
     title: "Can You Lower Cholesterol Without Medication?",
     description: "When lifestyle changes are enough — and when medication is the right call.",
   },
+  {
+    href: "/guides/ldl-160-what-it-means-and-how-to-lower-it",
+    title: "LDL 160: What It Means and How to Lower It",
+    description: "At the lower end of the high range — what doctors look for and what lifestyle changes can realistically do.",
+  },
+  {
+    href: "/guides/what-cholesterol-level-requires-medication",
+    title: "What Cholesterol Level Requires Medication?",
+    description: "How doctors actually make the medication decision — and what the evidence says about when a lifestyle trial is appropriate.",
+  },
+  {
+    href: "/guides/what-affects-cholesterol-the-most",
+    title: "What Affects Cholesterol the Most?",
+    description: "The major drivers of LDL, HDL, and triglycerides ranked by impact — and what to focus on first.",
+  },
 ];
 
 export default function CholesterolHub() {

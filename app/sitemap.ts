@@ -30,6 +30,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
       lastModified: new Date("2026-03-19"),
     },
+    {
+      url: `${BASE_URL}/guides/ldl-160-what-it-means-and-how-to-lower-it`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+      lastModified: new Date("2026-03-23"),
+    },
+    {
+      url: `${BASE_URL}/guides/what-cholesterol-level-requires-medication`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+      lastModified: new Date("2026-03-23"),
+    },
+    {
+      url: `${BASE_URL}/guides/what-affects-cholesterol-the-most`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+      lastModified: new Date("2026-03-23"),
+    },
   ];
 
   const staticPages: MetadataRoute.Sitemap = [
