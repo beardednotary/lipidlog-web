@@ -66,6 +66,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
       lastModified: new Date("2026-03-23"),
     },
+    {
+      url: `${BASE_URL}/guides/does-oatmeal-really-lower-cholesterol`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+      lastModified: new Date("2026-03-25"),
+    },
+    {
+      url: `${BASE_URL}/guides/how-much-can-statins-lower-ldl`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+      lastModified: new Date("2026-03-25"),
+    },
+    {
+      url: `${BASE_URL}/guides/what-doctors-recommend-to-lower-cholesterol-naturally`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+      lastModified: new Date("2026-03-25"),
+    },
   ];
 
   const staticPages: MetadataRoute.Sitemap = [
