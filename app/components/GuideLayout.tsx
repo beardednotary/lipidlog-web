@@ -54,6 +54,28 @@ export default function GuideLayout({
 
         {/* Content */}
         <article>{children}</article>
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              headline: title,
+              description,
+              datePublished: publishedAt,
+              publisher: {
+                "@type": "Organization",
+                name: "LipidLog",
+                url: "https://lipidlog.com",
+              },
+              author: {
+                "@type": "Organization",
+                name: "LipidLog",
+              },
+            }),
+          }}
+        />
       </div>
 
       <SiteFooter />

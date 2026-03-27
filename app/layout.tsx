@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const inter = Inter({
@@ -38,7 +39,32 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="bg-white text-text-primary font-sans">{children}</body>
+      <body className="bg-white text-text-primary font-sans">
+        {children}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-DY775BRCXV"
+          strategy="afterInteractive"
+        />
+        <Script id="ga-init" strategy="afterInteractive">{`
+          window.dataLayer=window.dataLayer||[];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js',new Date());
+          gtag('config','G-DY775BRCXV');
+        `}</Script>
+      </body>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "LipidLog",
+            url: "https://lipidlog.com",
+            description:
+              "LipidLog helps you track your cholesterol score, identify what's driving your numbers, and improve your labs before your next test.",
+          }),
+        }}
+      />
     </html>
   );
 }

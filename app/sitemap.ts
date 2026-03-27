@@ -84,6 +84,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
       lastModified: new Date("2026-03-25"),
     },
+    {
+      url: `${BASE_URL}/guides/does-alcohol-increase-cholesterol`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+      lastModified: new Date("2026-03-25"),
+    },
+    {
+      url: `${BASE_URL}/guides/how-much-saturated-fat-is-too-much`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+      lastModified: new Date("2026-03-25"),
+    },
+    {
+      url: `${BASE_URL}/guides/can-you-track-cholesterol-between-lab-tests`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+      lastModified: new Date("2026-03-25"),
+    },
+    {
+      url: `${BASE_URL}/guides/how-to-prepare-for-your-next-cholesterol-test`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+      lastModified: new Date("2026-03-25"),
+    },
   ];
 
   const staticPages: MetadataRoute.Sitemap = [

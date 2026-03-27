@@ -300,6 +300,24 @@ export default async function LabPage({
       </article>
 
       <SiteFooter />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "MedicalWebPage",
+            name: `${data.label} ${data.value}: What It Means and How to Improve It`,
+            description: `${data.label} of ${data.value} — understand your risk level, how much it can improve in 90 days, and the habits that move the needle most.`,
+            url: `https://lipidlog.com/labs/${slug}`,
+            publisher: {
+              "@type": "Organization",
+              name: "LipidLog",
+              url: "https://lipidlog.com",
+            },
+          }),
+        }}
+      />
     </main>
   );
 }

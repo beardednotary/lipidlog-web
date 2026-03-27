@@ -437,6 +437,32 @@ export default function Home() {
         </div>
       </section>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "MobileApplication",
+            name: "LipidLog",
+            url: "https://lipidlog.com",
+            description:
+              "LipidLog helps you track your cholesterol score, identify what's driving your numbers, and improve your labs before your next test.",
+            operatingSystem: "iOS",
+            applicationCategory: "HealthApplication",
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "USD",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "LipidLog",
+              url: "https://lipidlog.com",
+            },
+          }),
+        }}
+      />
+
       {/* ── Footer ──────────────────────────────────────────────────────── */}
       <footer className="py-10 px-6 bg-brand-gray border-t border-gray-200">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
